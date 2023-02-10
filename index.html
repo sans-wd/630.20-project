@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- ========= Jquery for counterJs ========= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- ========= Page's Font | Google Font ========= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ========= FontAwesome Css ========= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ========= SwiperJs Css ========= -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- ========= OWL CSS ========= -->
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <!-- ========= Bootstrap5 ========= -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ========= Main Css ========= -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <img
+      src="./img/backround_best_sell.jpg"
+      alt=""
+      style="
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* filter: ; */
+
+        filter: blur(40px) contrast(4.75);
+        opacity: 0.5;
+      "
+    />
+    <div class="container">
+      <div class="row">
+        <nav class="navbarr spbtw">
+          <div class="logo">
+            <img src="./img/logo.png" alt="" />
+          </div>
+          <div class="input_part">
+            <div class="input-group">
+              <span class="input-group-text mypont input_menu"
+                ><i class="fa-solid fa-border-all"></i>Menus<i
+                  class="fa-solid fa-caret-down"
+                ></i
+              ></span>
+              <input
+                type="text"
+                class="form-control myinput"
+                aria-label="Amount (to the nearest dollar)"
+              />
+              <span class="input-group-text mypont input_search"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+            </div>
+          </div>
+          <div class="navbuttons">
+            <button type="button" class="btn btn-light">Log In</button>
+            <button type="button" class="btn btn-light">
+              <i class="fa-solid fa-user"></i>Sign Up
+            </button>
+          </div>
+          <div class="myburger">
+            <div class="offcanvas offcanvas-start" id="demo">
+              <div class="offcanvas-header">
+                <h1 class="offcanvas-title">Menu</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <button type="button" class="btn btn-light burbut1">
+                  Catalog
+                </button>
+                <br />
+                <button type="button" class="btn btn-light burbut2">
+                  <i class="fa-solid fa-magnifying-glass"></i>Search
+                </button>
+                <br />
+                <button type="button" class="btn btn-light burbut1">
+                  Log In
+                </button>
+                <br />
+                <button type="button" class="btn btn-light burbut2">
+                  <i class="fa-solid fa-user"></i>Sign Up
+                </button>
+              </div>
+            </div>
+
+            <button
+              class="btn btn-light"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#demo"
+            >
+              <i class="fa-solid fa-bars fa-2x"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div class="row pt-5">
+        <div class="col-xxl-9 col-xl-8 mb-4">
+          <div class="back_to_school">
+            <h5>BACK TO SCHOOL</h5>
+            <h1>Special 50% Off</h1>
+            <h6>for our student community</h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+            <div class="btn btn-light my_btn_deal">
+              <span>Get the deal</span>
+              <i class="fa-solid fa-chevron-right ps-3"></i>
+            </div>
+            <div class="btn btn-light my_btn_promo ms-3">
+              <span>See other promos</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 mb-4">
+          <div class="best_sell">
+            <h1>Best Seller</h1>
+            <p>Based sales this weeks</p>
+            <div class="d-flex justify-content-center align-items-center">
+              <img class="img-fluid" src="./img/best_sell_bok.jpg" alt="" />
+            </div>
+            <span>Chainsaw Man</span>
+            <h2>ADVANTURE, HORROR, COMEDY</h2>
+            <h6 class="text-center">
+              <div class="btn btn-light">
+                <div class="d-flex">
+                  <p>60.00</p>
+                  <span>USD 45.25</span>
+                </div>
+              </div>
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="quality pt-3 pb-5">
+        <div class="row">
+          <div class="col-xl-3 col-lg-6 col-md-6">
+            <div
+              class="quality_card d-flex justify-content-betwen align-items-center"
+            >
+              <img class="img-fluid" src="./img/icon.svg" alt="" />
+              <div class="row">
+                <span>Quick Delivery</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6">
+            <div
+              class="quality_card d-flex justify-content-betwen align-items-center"
+            >
+              <img class="img-fluid" src="./img/icon-1.svg" alt="" />
+              <div class="row">
+                <span>Secure Payment</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6">
+            <div
+              class="quality_card d-flex justify-content-betwen align-items-center"
+            >
+              <img class="img-fluid" src="./img/icon-2.svg" alt="" />
+              <div class="row">
+                <span>Best Quality</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6">
+            <div
+              class="quality_card d-flex justify-content-betwen align-items-center"
+            >
+              <img class="img-fluid" src="./img/icon-3.svg" alt="" />
+              <div class="row">
+                <span>Return Guarantee</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="recom_and_pop">
+        <div class="row">
+          <div class="col-xl-6 col-lg-12 mb-5">
+            <div class="recom_card" id="first">
+              <h1>Recomended For You</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="row pt-3"></div>
+              <div class="owl-carousel">
+                <div>
+                  <div class="">
+                    <img
+                      class="img-fluid"
+                      src="./img/d37703abe15162b602798e8489700d03.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div class="">
+                    <img
+                      class="img-fluid"
+                      src="./img/sub-buzz-11109-1608830847-14.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div class="">
+                    <img
+                      class="img-fluid"
+                      src="./img/sub-buzz-5094-1608511484-18.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div class="">
+                    <img
+                      class="img-fluid"
+                      src="./img/the-toynbee-convector-9781982105198_hr.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="slider_nav">
+                <button class="am-next">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-12 mb-5">
+            <div class="recom_card pop_card" id="second">
+              <h1>Popular in 2020</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+
+              <div class="row pt-3"></div>
+
+              <div class="owl-carousel">
+                <div>
+                  <img
+                    class="img-fluid"
+                    src="https://i.pinimg.com/564x/55/c5/9e/55c59e331843a8f1a2df266a278bf82b.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img class="img-fluid" src="./img/pop2.jpg" alt="" />
+                </div>
+                <div>
+                  <img
+                    class="img-fluid"
+                    src="https://i.pinimg.com/564x/a3/06/b0/a306b0ce34ee861bb63b466cba8a6489.jpg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="img-fluid"
+                    src="https://i.pinimg.com/564x/c1/18/5f/c1185fd18531261ece1a9d135825d2fc.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="slider_nav">
+                <button class="am-next2">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FLASH_SAALES_PART -->
+      <div class="flash_sale">
+        <div class="flash_sale_info">
+          <h1>
+            <i class="fa-solid fa-bolt"></i>Flash Sale<i
+              class="fa-solid fa-bolt"
+            ></i>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="d-flex align-items-center justify-content-center">
+            <div class="flash_sale_timer position-relative d-flex">
+              <p id="demo1" class="position-relative">
+                <span class="position-absolute"> days</span>
+              </p>
+              <p id="demo2" class="position-relative"></p>
+              <p id="demo3" class="position-relative"></p>
+              <p id="demo4" class="position-relative"></p>
+            </div>
+          </div>
+          <div class="flash_sale_items pt-5 mt-1">
+            <div class="row">
+              <div class="col-xl-3 col-lg-6">
+                <div class="flash_sale_card">
+                  <h2 class="text-center">
+                    <img
+                      src="https://i.pinimg.com/564x/81/7f/88/817f88ab10f60f6576e7f53ccbe42d62.jpg"
+                      alt=""
+                    />
+                  </h2>
+                  <h5>The Woods</h5>
+                  <h6>ADVANTURE</h6>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <p>$ 54.78</p>
+                    <span class="ps-2">$70.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6">
+                <div class="flash_sale_card">
+                  <h2 class="text-center">
+                    <img
+                      src="https://i.pinimg.com/564x/c4/29/43/c4294349e5bc92f26c6c032d6f44c1b1.jpg"
+                      alt=""
+                    />
+                  </h2>
+                  <h5>Behind the Canvas</h5>
+                  <h6>MYSTERY</h6>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <p>$ 54.78</p>
+                    <span class="ps-2">$70.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6">
+                <div class="flash_sale_card">
+                  <h2 class="text-center">
+                    <img
+                      src="https://i.pinimg.com/564x/3d/a3/02/3da302c2a1b527bcd0c1b37bc336cad0.jpg"
+                      alt=""
+                    />
+                  </h2>
+                  <h5>The Lost Carnival</h5>
+                  <h6>DETECTIVE</h6>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <p>$ 54.78</p>
+                    <span class="ps-2">$70.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6">
+                <div class="flash_sale_card">
+                  <h2 class="text-center">
+                    <img
+                      src="https://i.pinimg.com/564x/b2/51/e0/b251e00b7c319e6c0dd1a2ce0fd0fb6d.jpg"
+                      alt=""
+                    />
+                  </h2>
+                  <h5>Nigromantes</h5>
+                  <h6>HORRORS</h6>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <p>$ 54.78</p>
+                    <span class="ps-2">$70.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FLASH_SAALES_PART -->
+
+      <!-- SAALES PART START -->
+      <div class="swipe_sales pt-5">
+        <h6 class="pt-2">
+          <i class="fa-solid fa-hand-point-right fa-lg"></i>Second Hand Books on
+          Sale<i class="fa-solid fa-hand-point-left fa-lg"></i>
+        </h6>
+        <p class="pb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam totam
+          neque officia quas facere! Accusamus, eius tenetur animi quod laborum
+          reiciendis perferendis, tempora quos totam maxime minus perspiciatis
+          laudantium debitis?
+        </p>
+        <div class="swiper mySwiper pt-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper_sales_card">
+                <div class="sales_swiper_img position-relative">
+                  <img
+                    src="https://i.pinimg.com/564x/e8/b4/41/e8b441585abb07ae3ef0d2965e2c95db.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 422.73px; width: 275px"
+                  />
+                  <span class="position-absolute"> 50% </span>
+                </div>
+                <h1>Witch</h1>
+                <h2>FANTASY</h2>
+                <div class="d-flex align-items-lg-center">
+                  <div class="review">
+                    <span><i class="fa-solid fa-star"></i> 4.3</span>
+                  </div>
+                  <div class="swipe_price" style="padding-left: 126px">
+                    <span>$45.4 <span class="ps-1">$98.4</span> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_sales_card">
+                <div class="sales_swiper_img position-relative">
+                  <img
+                    src="https://i.pinimg.com/564x/56/3c/f7/563cf71833d3a1947484e9ad4a3eae48.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 422.73px; width: 275px"
+                  />
+                  <span class="position-absolute"> 50% </span>
+                </div>
+                <h1>Little Girls</h1>
+                <h2>HORROR</h2>
+                <div class="d-flex align-items-lg-center">
+                  <div class="review">
+                    <span><i class="fa-solid fa-star"></i> 3.9</span>
+                  </div>
+                  <div class="swipe_price" style="padding-left: 126px">
+                    <span>$18.4 <span class="ps-1">$36.9</span> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_sales_card">
+                <div class="sales_swiper_img position-relative">
+                  <img
+                    src="https://i.pinimg.com/564x/6b/80/90/6b8090629c2f14c9b3861b9f5178cfc9.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 422.73px; width: 275px"
+                  />
+                  <span class="position-absolute"> 50% </span>
+                </div>
+                <h1>Perfume</h1>
+                <h2>SUSPENS</h2>
+                <div class="d-flex align-items-lg-center">
+                  <div class="review">
+                    <span><i class="fa-solid fa-star"></i> 4.9</span>
+                  </div>
+                  <div class="swipe_price" style="padding-left: 126px">
+                    <span>$19.9 <span class="ps-1">$29.9</span> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_sales_card">
+                <div class="sales_swiper_img position-relative">
+                  <img
+                    src="https://i.pinimg.com/564x/3e/af/03/3eaf0376c91b49da096d4575555a8036.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 422.73px; width: 275px"
+                  />
+                  <span class="position-absolute"> 50% </span>
+                </div>
+                <h1>If We Were Villains</h1>
+                <h2>PSYCHOLOGY</h2>
+                <div class="d-flex align-items-lg-center">
+                  <div class="review">
+                    <span><i class="fa-solid fa-star"></i> 4.4</span>
+                  </div>
+                  <div class="swipe_price" style="padding-left: 126px">
+                    <span>$13.2 <span class="ps-1">$26.4</span> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_sales_card">
+                <div class="sales_swiper_img position-relative">
+                  <img
+                    src="https://i.pinimg.com/564x/e8/b4/41/e8b441585abb07ae3ef0d2965e2c95db.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 422.73px; width: 275px"
+                  />
+                  <span class="position-absolute"> 50% </span>
+                </div>
+                <h1>Witch</h1>
+                <h2>FANTASY</h2>
+                <div class="d-flex align-items-lg-center">
+                  <div class="review">
+                    <span><i class="fa-solid fa-star"></i> 4.3</span>
+                  </div>
+                  <div class="swipe_price" style="padding-left: 126px">
+                    <span>$45.4 <span class="ps-1">$98.4</span> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_sales_card">
+                <div class="sales_swiper_img position-relative">
+                  <img
+                    src="https://i.pinimg.com/564x/56/3c/f7/563cf71833d3a1947484e9ad4a3eae48.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 422.73px; width: 275px"
+                  />
+                  <span class="position-absolute"> 50% </span>
+                </div>
+                <h1>Little Girls</h1>
+                <h2>HORROR</h2>
+                <div class="d-flex align-items-lg-center">
+                  <div class="review">
+                    <span><i class="fa-solid fa-star"></i> 3.9</span>
+                  </div>
+                  <div class="swipe_price" style="padding-left: 126px">
+                    <span>$18.4 <span class="ps-1">$36.9</span> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_sales_card">
+                <div class="sales_swiper_img position-relative">
+                  <img
+                    src="https://i.pinimg.com/564x/6b/80/90/6b8090629c2f14c9b3861b9f5178cfc9.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 422.73px; width: 275px"
+                  />
+                  <span class="position-absolute"> 50% </span>
+                </div>
+                <h1>Perfume</h1>
+                <h2>SUSPENS</h2>
+                <div class="d-flex align-items-lg-center">
+                  <div class="review">
+                    <span><i class="fa-solid fa-star"></i> 4.9</span>
+                  </div>
+                  <div class="swipe_price" style="padding-left: 126px">
+                    <span>$19.9 <span class="ps-1">$29.9</span> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_sales_card">
+                <div class="sales_swiper_img position-relative">
+                  <img
+                    src="https://i.pinimg.com/564x/3e/af/03/3eaf0376c91b49da096d4575555a8036.jpg"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 422.73px; width: 275px"
+                  />
+                  <span class="position-absolute"> 50% </span>
+                </div>
+                <h1>If We Were Villains</h1>
+                <h2>PSYCHOLOGY</h2>
+                <div class="d-flex align-items-lg-center">
+                  <div class="review">
+                    <span><i class="fa-solid fa-star"></i> 4.4</span>
+                  </div>
+                  <div class="swipe_price" style="padding-left: 126px">
+                    <span>$13.2 <span class="ps-1">$26.4</span> </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SAALES PART end-->
+    </div>
+    <!-- FEATURED BOOKS START -->
+    <div class="container-fluid featured_back position-relative">
+      <img
+        src="./img/backround_best_sell.jpg"
+        alt=""
+        style="
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          /* filter: ; */
+
+          filter: blur(70px) contrast(3.75);
+          opacity: 0.5;
+        "
+      />
+      <div class="container pt-5 mt-5">
+        <div class="row">
+          <div class="col-xl-6 col-lg-12 featur_boock_first_side">
+            <h1>Featured Books</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore
+            </p>
+            <div class="col-lg-12">
+              <div class="row feature_bokk_card">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <img
+                    class="img-fluid"
+                    src="https://i.pinimg.com/564x/a7/d6/a6/a7d6a63152a3c0694554e5efc3a4af50.jpg"
+                    alt=""
+                    style="
+                      border-radius: 20px;
+
+                      width: 100%;
+                      object-fit: cover;
+                    "
+                  />
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <h1><i class="fa-solid fa-bookmark"></i> Battle Drive</h1>
+                  <h2>Synopsis</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center autors"
+                  >
+                    <p>
+                      Writen by <br />
+                      <span>Kevin Smiley</span>
+                    </p>
+                    <p>
+                      Year <br />
+                      <span>2019</span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center price pt-2"
+                  >
+                    <span> $ 84.78 <span class="ps-1">$90.00</span> </span>
+                    <div class="btn btn-light">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      ADD
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-12">
+            <div class="row feture_books_items">
+              <div
+                class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 mb-2"
+              >
+                <img
+                  src="https://i.pinimg.com/564x/83/7b/b0/837bb01b7425409362c265bacea0a57a.jpg"
+                  alt=""
+                  class="img-fluid"
+                  style="border-radius: 14px"
+                />
+              </div>
+              <div
+                class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 mb-2"
+              >
+                <img
+                  src="https://i.pinimg.com/564x/9b/2d/fd/9b2dfdf1b4967bd6ed0d9219f21b3440.jpg"
+                  alt=""
+                  class="img-fluid"
+                  style="border-radius: 14px"
+                />
+              </div>
+              <div
+                class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 mb-2"
+              >
+                <img
+                  src="https://i.pinimg.com/564x/1f/aa/53/1faa53837aa242d4ddfd8f3c8e2b2876.jpg"
+                  alt=""
+                  class="img-fluid"
+                  style="border-radius: 14px"
+                />
+              </div>
+              <div
+                class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 mb-2"
+              >
+                <img
+                  src="https://i.pinimg.com/564x/df/74/26/df7426a73131a6330f976b38a9781344.jpg"
+                  alt=""
+                  class="img-fluid"
+                  style="border-radius: 14px"
+                />
+              </div>
+              <div
+                class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 mb-2"
+              >
+                <img
+                  src="https://i.pinimg.com/564x/55/96/9b/55969b78856c8d0a712285fd0c0f58dd.jpg"
+                  alt=""
+                  class="img-fluid"
+                  style="border-radius: 14px"
+                />
+              </div>
+              <div
+                class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 mb-2"
+              >
+                <img
+                  src="https://i.pinimg.com/564x/1c/e0/f4/1ce0f4518bc8583ccffdb62ebcd6aa8b.jpg"
+                  alt=""
+                  class="img-fluid light_jar"
+                  style="border-radius: 14px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FEATURED BOOKS START -->
+    <!-- TESTIMONIALS START -->
+    <div class="testimonials pt-3 mt-5 pb-0 mb-0">
+      <div class="gtco-testimonials">
+        <h2>Testimonials Carousel - Cards Comments</h2>
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div>
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300"
+                alt=""
+              />
+              <div class="card-body">
+                <h5>
+                  Ronne Galle <br />
+                  <span> Project Manager </span>
+                </h5>
+                <p class="card-text">
+                  “ Nam libero tempore, cum soluta nobis est eligendi optio
+                  cumque nihil impedit quo minus id quod maxime placeat ”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301"
+                alt=""
+              />
+              <div class="card-body">
+                <h5>
+                  Missy Limana<br />
+                  <span> Engineer </span>
+                </h5>
+                <p class="card-text">
+                  “ Nam libero tempore, cum soluta nobis est eligendi optio
+                  cumque nihil impedit quo minus id quod maxime placeat ”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302"
+                alt=""
+              />
+              <div class="card-body">
+                <h5>
+                  Martha Brown<br />
+                  <span> Project Manager </span>
+                </h5>
+                <p class="card-text">
+                  “ Nam libero tempore, cum soluta nobis est eligendi optio
+                  cumque nihil impedit quo minus id quod maxime placeat ”
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303"
+                alt=""
+              />
+              <div class="card-body">
+                <h5>
+                  Hanna Lisem<br />
+                  <span> Project Manager </span>
+                </h5>
+                <p class="card-text">
+                  “ Nam libero tempore, cum soluta nobis est eligendi optio
+                  cumque nihil impedit quo minus id quod maxime placeat ”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TESTIMONIALS END -->
+    <div class="container-fluid">
+      <!-- LetestNews_start -->
+      <section class="LetestNews">
+        <div class="container">
+          <div class="a_letestnews">
+            <h3 class="a_title">Latest News</h3>
+            <div
+              class="a_title_content d-flex justify-content-between align-items-center"
+            >
+              <div class="a_title_text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+              </div>
+              <div class="a_title_btn">
+                <button
+                  type="button"
+                  class="a_mybtn1 d-flex gap-3 align-items-center"
+                >
+                  View more
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="benefit_cards row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="a_card my-3">
+                <div class="a_card_img overflow-hidden">
+                  <img
+                    src="https://pbs.twimg.com/media/FVTf8B-UEAAH3Bt?format=jpg&name=900x900"
+                    alt=""
+                    style="width: 100%; height: auto"
+                  />
+                </div>
+                <div class="a_card_text mb-3">
+                  <h5>Why reading is important for our children?</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore...
+                  </p>
+                  <a href="">Continue reading</a>
+                </div>
+
+                <div class="a_card_person d-flex align-items-center">
+                  <div class="person_img overflow-hidden">
+                    <img
+                      src="https://media.tenor.com/Vlr5ep-dRXMAAAAM/ryan-gosling-blade-runner2049.gif"
+                      alt=""
+                      style="width: 100%; height: auto"
+                    />
+                  </div>
+                  <div class="person_text">
+                    <h3>Lidya Humble</h3>
+                    <span>2 days ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="a_card my-3">
+                <div class="a_card_img overflow-hidden">
+                  <img
+                    src="https://media.gq-magazine.co.uk/photos/5e9ee080be258400088d6fc3/1:1/w_1080,h_1080,c_limit/20200421-psycho-04.jpg"
+                    alt=""
+                    style="width: 100%; height: auto"
+                  />
+                </div>
+                <div class="a_card_text mb-3">
+                  <h5>Why reading is important for our children?</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore...
+                  </p>
+                  <a href="">Continue reading</a>
+                </div>
+
+                <div class="a_card_person d-flex align-items-center">
+                  <div class="person_img overflow-hidden">
+                    <img
+                      src="https://lastfm.freetls.fastly.net/i/u/300x300/6d8a8ff92b706d445650a5efa88a3dfa.jpg"
+                      alt=""
+                      style="width: 100%; height: auto"
+                    />
+                  </div>
+                  <div class="person_text">
+                    <h3>Lidya Humble</h3>
+                    <span>2 days ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="a_card my-3">
+                <div class="a_card_img overflow-hidden">
+                  <img
+                    src="https://i.guim.co.uk/img/media/44eddd0655bf11d1a7b029f15439f9f7b9efb201/181_28_2208_1324/master/2208.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=da9c2c9b2fe603689a6116aa0fc9b948"
+                    alt=""
+                    style="width: 100%; height: auto"
+                  />
+                </div>
+                <div class="a_card_text mb-3">
+                  <h5>Why reading is important for our children?</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore...
+                  </p>
+                  <a href="">Continue reading</a>
+                </div>
+
+                <div class="a_card_person d-flex align-items-center">
+                  <div class="person_img overflow-hidden">
+                    <img
+                      src="https://media.tenor.com/7EVV_etkVscAAAAC/fight-club-triggered.gif"
+                      alt=""
+                      style="width: 100%; height: auto; scale: 1.1"
+                    />
+                  </div>
+                  <div class="person_text">
+                    <h3>Lidya Humble</h3>
+                    <span>2 days ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="a_card my-3">
+                <div class="a_card_img overflow-hidden">
+                  <img
+                    src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F11%2Fjohn-wick-chapter-4-trailer-keanu-reeves-bill-skarsgard-0.jpg?fit=max&cbr=1&q=90&w=750&h=500"
+                    alt=""
+                    style="width: 100%; height: auto; scale: 1.1"
+                  />
+                </div>
+                <div class="a_card_text mb-3">
+                  <h5>Why reading is important for our children?</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore...
+                  </p>
+                  <a href="">Continue reading</a>
+                </div>
+
+                <div class="a_card_person d-flex align-items-center">
+                  <div class="person_img overflow-hidden">
+                    <img
+                      src="https://media.tenor.com/ZEO_IbZ5n3QAAAAd/john-wick.gif"
+                      alt=""
+                      style="width: 100%; height: auto; scale: 1.3"
+                    />
+                  </div>
+                  <div class="person_text">
+                    <h3>Lidya Humble</h3>
+                    <span>2 days ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- LetestNews_end -->
+
+      <!-- totalNumber_start -->
+      <section class="totalNumber">
+        <div class="container">
+          <div id="a_counter" class="row">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="a_total_content d-flex align-items-center flex-column my-3"
+              >
+                <i class="fa-solid fa-users"></i>
+                <h3>
+                  <span data-num="125" class="anumber">125</span>,<span
+                    data-num="663"
+                    class="anumber"
+                    >663</span
+                  >
+                </h3>
+                <span class="a_total_text">Happy Customers</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="a_total_content d-flex align-items-center flex-column my-3"
+              >
+                <i class="fa-solid fa-book-open"></i>
+                <h3>
+                  <span data-num="50" class="anumber">50</span>,<span
+                    data-num="672"
+                    class="anumber"
+                    >672</span
+                  >+
+                </h3>
+                <span class="a_total_text">Book Collections</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="a_total_content d-flex align-items-center flex-column my-3"
+              >
+                <i class="fa-sharp fa-solid fa-store"></i>
+                <h3>
+                  <span data-num="1" class="anumber">1</span>,<span
+                    data-num="562"
+                    class="anumber"
+                    >562</span
+                  >
+                </h3>
+                <span class="a_total_text">Our Stores</span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="a_total_content d-flex align-items-center flex-column my-3"
+              >
+                <i class="fa-solid fa-feather-pointed"></i>
+                <h3>
+                  <span data-num="457" class="anumber">457</span>
+                </h3>
+                <span class="a_total_text">Famous Writers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- totalNumber_end -->
+
+      <!-- subscribe_start -->
+      <section class="subscribe">
+        <div class="container">
+          <div
+            class="a_subscribe_inner d-flex flex-column align-items-center text-center"
+          >
+            <div class="a_subscribe_content">
+              <h3>
+                Subscribe our newsletter for newest <br />
+                books updates
+              </h3>
+            </div>
+            <div class="a_subscribe_cta d-flex justify-content-between">
+              <input
+                class="a_subscribe_email"
+                type="text"
+                name=""
+                id=""
+                placeholder="Your email here"
+              />
+              <input
+                class="a_subscribe_btn"
+                type="submit"
+                name=""
+                id=""
+                value="Send"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- subscribe_end-->
+
+      <!-- FOTTER START -->
+      <footer class="container pt-5 mt-5">
+        <div class="row">
+          <div class="col-lg-4 logo">
+            <img src="img/logo.png" alt="" class="img-fluid" />
+            <br />
+            <br />
+            <span
+              >Bookoe is a Book Store Website lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud</span
+            >
+            <h6>Follow Us</h6>
+            <div class="social d-flex">
+              <div
+                class="box_style1 d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-brands fa-facebook fa-2x"></i>
+              </div>
+              <div
+                class="box_style2 d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-brands fa-youtube fa-2x"></i>
+              </div>
+              <div
+                class="box_style3 d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-brands fa-twitter fa-2x"></i>
+              </div>
+              <div
+                class="box_style4 d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+              </div>
+              <div
+                class="box_style5 d-flex align-items-center justify-content-center"
+              >
+                <i class="fa-brands fa-instagram fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 foot_tab">
+            <h6 class="zaqolovok">Books Categories</h6>
+            <ul class="first1">
+              <li>Action</li>
+              <li>Adventure</li>
+              <li>Comedy</li>
+              <li>Crime</li>
+              <li>Drama</li>
+              <li>Fantasy</li>
+              <li>Horror</li>
+            </ul>
+            <ul class="second2">
+              <li>Law</li>
+              <li>Mystery</li>
+              <li>Professional</li>
+              <li>Romance</li>
+              <li>TV series</li>
+              <li>View more</li>
+            </ul>
+          </div>
+          <div class="col-lg-2">
+            <h6 class="zaqolovok">Quick Links</h6>
+            <ul class="third3">
+              <li>About us</li>
+              <li>Contact us</li>
+              <li>Products</li>
+              <li>Login</li>
+              <li>Sign Up</li>
+              <li>FAQ</li>
+              <li>Shipment</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 foot_tab">
+            <h6 class="zaqolovok">Our store</h6>
+            <div>
+              <iframe
+                style="width: 100%; border-radius: 15px"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=+(IATC)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe>
+            </div>
+
+            <i
+              style="color: #6c5dd3"
+              class="fa-sharp fa-solid fa-location-dot pe-2 mg1 pt-3"
+            ></i>
+            <span>
+              832 Thompson Drive, San Fransisco
+              <br />
+              <span class="mg2">CA 94107, United States</span></span
+            >
+            <br />
+            <br />
+            <span>
+              <i style="color: #6c5dd3" class="fa-solid fa-phone pe-2"></i
+              >+994-50-388-80-86</span
+            >
+            <br />
+            <br />
+            <span>
+              <i style="color: #6c5dd3" class="fa-solid fa-envelope pe-2"></i
+              >pitann3@gmail.com</span
+            >
+          </div>
+        </div>
+      </footer>
+      <hr style="color: #6c5dd3" />
+      <div class="container d-flex justify-content-between foot2">
+        <span> Book Store Website © 2023 All Rights Reserved</span>
+        <span> Made with <span style="color: red">♥</span> by 630.20</span>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script>
+  $("#first .owl-carousel").owlCarousel({
+    loop: true,
+
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+    },
+    navText: [$(".am-prev"), $(".am-next")],
+  });
+</script>
+<script>
+  $("#second .owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+    },
+    navText: [$("#second .am-prev2"), $("#second .am-next2")],
+  });
+</script>
+<script>
+  (function () {
+    "use strict";
+
+    var carousels = function () {
+      $(".owl-carousel1").owlCarousel({
+        loop: true,
+        center: true,
+        margin: 0,
+        responsiveClass: true,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          680: {
+            items: 2,
+            nav: false,
+            loop: false,
+          },
+          1000: {
+            items: 3,
+            nav: true,
+          },
+        },
+      });
+    };
+
+    (function ($) {
+      carousels();
+    })(jQuery);
+  })();
+</script>
+
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Feb 29, 2023 15:37:25").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function () {
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+
+    document.getElementById("demo1").innerHTML =
+      days + " <span class='position-absolute flas_day'>Days</span>";
+    document.getElementById("demo2").innerHTML =
+      minutes + " <span class='position-absolute flas_hour'>Hours</span>";
+    document.getElementById("demo3").innerHTML =
+      hours + " <span class='position-absolute flas_min'>Minutes</span>";
+    document.getElementById("demo4").innerHTML =
+      seconds + " <span class='position-absolute flas_sec'>Second</span>";
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo1").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      325: {
+        slidesPerView: 1,
+        spaceBetween: 50,
+      },
+      375: {
+        slidesPerView: 1,
+        spaceBetween: 100,
+      },
+      420: {
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      576: {
+        slidesPerView: 1.6,
+        spaceBetween: -10,
+      },
+      // when window width is >= 640px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: -100,
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: -300,
+      },
+      1200: {
+        slidesPerView: 3.5,
+        spaceBetween: -0,
+      },
+      1400: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+<script>
+  var time = 2,
+    cc = 1;
+  $(window).scroll(function () {
+    $("#a_counter").each(function () {
+      var cPos = $(this).offset().top,
+        topWindow = $(window).scrollTop();
+      if (cPos < topWindow + 1000) {
+        if (cc < 2) {
+          $(".anumber").addClass("a_viz");
+          $("span").each(function () {
+            var i = 1,
+              num = $(this).data("num"),
+              step = (400 * time) / num,
+              that = $(this),
+              int = setInterval(function () {
+                if (i <= num) {
+                  that.html(i);
+                } else {
+                  cc = cc + 2;
+                  clearInterval(int);
+                }
+                i++;
+              }, step);
+          });
+        }
+      }
+    });
+  });
+</script>
