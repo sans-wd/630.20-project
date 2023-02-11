@@ -1147,6 +1147,17 @@ ul {
   color: #11142d;
   margin-left: 27px;
 }
+.third3 li a {
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 34px;
+  color: #11142d;
+  margin-left: 27px;
+  text-decoration: none;
+  margin: 0;
+}
 .third3 li {
   font-family: "Cairo";
   font-style: normal;
@@ -1178,12 +1189,6 @@ ul {
   line-height: 34px;
   color: #11142d;
 }
-
-
-
-
-
-
 
 /* FOOTER END */
 @media only screen and (max-width: 1399px) {

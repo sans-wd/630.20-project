@@ -54,6 +54,20 @@
   </head>
   <body>
     <div id="loading"></div>
+    <script>
+      $.get("loader.html", function (data) {
+        $("#loading").replaceWith(data);
+      });
+      $(window).on("load", function () {
+        setTimeout(removeLoader, 4000); //wait for page load PLUS two seconds.
+      });
+      function removeLoader() {
+        $(".page-loader").fadeOut(500, function () {
+          // fadeOut complete. Remove the loading div
+          $(".page-loader").remove(); //makes page more lightweight
+        });
+      }
+    </script>
     <img
       src="./img/backround_best_sell.jpg"
       alt=""
@@ -1194,7 +1208,7 @@
           <div class="col-lg-2">
             <h6 class="zaqolovok">Quick Links</h6>
             <ul class="third3">
-              <li>About us</li>
+              <li><a href="about us.html">About us</a></li>
               <li>Contact us</li>
               <li>Products</li>
               <li>Login</li>
@@ -1222,22 +1236,18 @@
               style="color: #6c5dd3"
               class="fa-sharp fa-solid fa-location-dot pe-2 mg1 pt-3"
             ></i>
-            <span>
-              832 Thompson Drive, San Fransisco
-              <br />
-              <span class="mg2">CA 94107, United States</span></span
-            >
+            <span> Azərbaycan, Bakı. Nizami 183 </span>
             <br />
             <br />
             <span>
               <i style="color: #6c5dd3" class="fa-solid fa-phone pe-2"></i
-              >+994-50-388-80-86</span
+              >+99412 493 83 83</span
             >
             <br />
             <br />
             <span>
               <i style="color: #6c5dd3" class="fa-solid fa-envelope pe-2"></i
-              >pitann3@gmail.com</span
+              >info@iatc.edu.az</span
             >
           </div>
         </div>
@@ -1444,18 +1454,4 @@
       }
     });
   });
-</script>
-<script>
-  $.get("loader.html", function (data) {
-    $("#loading").replaceWith(data);
-  });
-  $(window).on("load", function () {
-    setTimeout(removeLoader, 4000); //wait for page load PLUS two seconds.
-  });
-  function removeLoader() {
-    $(".page-loader").fadeOut(500, function () {
-      // fadeOut complete. Remove the loading div
-      $(".page-loader").remove(); //makes page more lightweight
-    });
-  }
 </script>
