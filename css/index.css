@@ -1,3 +1,4 @@
+@import url(/css/loader.css);
 body {
   margin: 0 auto;
   padding: 0;
@@ -92,6 +93,10 @@ body {
 
 .myburger {
   display: none;
+}
+.myburger .burder_btn {
+  background-color: transparent;
+  border-color: transparent;
 }
 .burbut1 {
   background: #f0eeff;
@@ -432,7 +437,7 @@ body {
 .flash_sale_timer {
   border: 1px solid #ff754c;
   border-radius: 14px;
-  padding-bottom: 10px;
+  padding-bottom: 31px;
 }
 .flash_sale_card {
   margin-bottom: 20px;
@@ -551,7 +556,9 @@ body {
   text-decoration-line: line-through;
   color: #11142d;
 }
-
+.swipe_price {
+  padding-left: 102px;
+}
 .swipe_sales h6 {
   font-family: "Cairo";
   font-style: normal;
@@ -1237,6 +1244,9 @@ ul {
     margin: 0 auto;
   }
   /* LetestNews_end  */
+  .swipe_sales h6 {
+    font-size: 45px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .back_to_school {
@@ -1275,6 +1285,15 @@ ul {
   .gtco-testimonials {
     margin-top: 20px;
   }
+  .swipe_sales i {
+    display: none;
+  }
+  .swipe_sales h6 {
+    line-height: 50px;
+  }
+  .swipe_price {
+    padding-left: 145px;
+  }
 }
 @media only screen and (max-width: 600px) {
   /* subscribe_start  */
@@ -1305,4 +1324,12 @@ ul {
   } */
 }
 @media only screen and (max-width: 400px) {
+  .flash_sale_timer p {
+    margin: 0px;
+  }
+  .flash_sale_card img {
+    max-height: 600px;
+    max-width: 388.06px;
+    max-height: 500px;
+  }
 }

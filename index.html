@@ -53,6 +53,7 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <div id="loading"></div>
     <img
       src="./img/backround_best_sell.jpg"
       alt=""
@@ -129,7 +130,7 @@
             </div>
 
             <button
-              class="btn btn-light"
+              class="btn btn-light burder_btn"
               type="button"
               data-bs-toggle="offcanvas"
               data-bs-target="#demo"
@@ -464,7 +465,7 @@
                   <div class="review">
                     <span><i class="fa-solid fa-star"></i> 4.3</span>
                   </div>
-                  <div class="swipe_price" style="padding-left: 126px">
+                  <div class="swipe_price">
                     <span>$45.4 <span class="ps-1">$98.4</span> </span>
                   </div>
                 </div>
@@ -487,7 +488,7 @@
                   <div class="review">
                     <span><i class="fa-solid fa-star"></i> 3.9</span>
                   </div>
-                  <div class="swipe_price" style="padding-left: 126px">
+                  <div class="swipe_price">
                     <span>$18.4 <span class="ps-1">$36.9</span> </span>
                   </div>
                 </div>
@@ -510,7 +511,7 @@
                   <div class="review">
                     <span><i class="fa-solid fa-star"></i> 4.9</span>
                   </div>
-                  <div class="swipe_price" style="padding-left: 126px">
+                  <div class="swipe_price">
                     <span>$19.9 <span class="ps-1">$29.9</span> </span>
                   </div>
                 </div>
@@ -533,7 +534,7 @@
                   <div class="review">
                     <span><i class="fa-solid fa-star"></i> 4.4</span>
                   </div>
-                  <div class="swipe_price" style="padding-left: 126px">
+                  <div class="swipe_price">
                     <span>$13.2 <span class="ps-1">$26.4</span> </span>
                   </div>
                 </div>
@@ -556,7 +557,7 @@
                   <div class="review">
                     <span><i class="fa-solid fa-star"></i> 4.3</span>
                   </div>
-                  <div class="swipe_price" style="padding-left: 126px">
+                  <div class="swipe_price">
                     <span>$45.4 <span class="ps-1">$98.4</span> </span>
                   </div>
                 </div>
@@ -579,7 +580,7 @@
                   <div class="review">
                     <span><i class="fa-solid fa-star"></i> 3.9</span>
                   </div>
-                  <div class="swipe_price" style="padding-left: 126px">
+                  <div class="swipe_price">
                     <span>$18.4 <span class="ps-1">$36.9</span> </span>
                   </div>
                 </div>
@@ -602,7 +603,7 @@
                   <div class="review">
                     <span><i class="fa-solid fa-star"></i> 4.9</span>
                   </div>
-                  <div class="swipe_price" style="padding-left: 126px">
+                  <div class="swipe_price">
                     <span>$19.9 <span class="ps-1">$29.9</span> </span>
                   </div>
                 </div>
@@ -625,7 +626,7 @@
                   <div class="review">
                     <span><i class="fa-solid fa-star"></i> 4.4</span>
                   </div>
-                  <div class="swipe_price" style="padding-left: 126px">
+                  <div class="swipe_price">
                     <span>$13.2 <span class="ps-1">$26.4</span> </span>
                   </div>
                 </div>
@@ -783,7 +784,7 @@
     <!-- TESTIMONIALS START -->
     <div class="testimonials pt-3 mt-5 pb-0 mb-0">
       <div class="gtco-testimonials">
-        <h2>Testimonials Carousel - Cards Comments</h2>
+        <h2>Testimonials</h2>
         <div class="owl-carousel owl-carousel1 owl-theme">
           <div>
             <div class="card text-center">
@@ -1443,4 +1444,18 @@
       }
     });
   });
+</script>
+<script>
+  $.get("loader.html", function (data) {
+    $("#loading").replaceWith(data);
+  });
+  $(window).on("load", function () {
+    setTimeout(removeLoader, 4000); //wait for page load PLUS two seconds.
+  });
+  function removeLoader() {
+    $(".page-loader").fadeOut(500, function () {
+      // fadeOut complete. Remove the loading div
+      $(".page-loader").remove(); //makes page more lightweight
+    });
+  }
 </script>
