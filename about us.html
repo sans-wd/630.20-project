@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- ========= Jquery for counterJs ========= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- ========= Page's Font | Google Font ========= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ========= FontAwesome Css ========= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ========= SwiperJs Css ========= -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- ========= OWL CSS ========= -->
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <!-- ========= Bootstrap5 ========= -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ========= Main Css ========= -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/about.us.css">
+  </head>
+<body>
+<!--     
+    <img
+    src="./img/backround_best_sell.jpg"
+    alt=""
+    style="
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* filter: ; */
+
+      filter: blur(40px) contrast(4.75);
+      opacity: 0.5;
+    "
+  /> -->
+  <div class="container">
+  <div class="row">
+    <nav class="navbarr spbtw">
+      <div class="logo">
+        <img src="./img/logo.png" alt="" />
+      </div>
+      <div class="input_part">
+        <div class="input-group">
+          <span class="input-group-text mypont input_menu"
+            ><i class="fa-solid fa-border-all"></i>Menus<i
+              class="fa-solid fa-caret-down"
+            ></i
+          ></span>
+          <input
+            type="text"
+            class="form-control myinput"
+            aria-label="Amount (to the nearest dollar)"
+          />
+          <span class="input-group-text mypont input_search"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+        </div>
+      </div>
+      <div class="navbuttons">
+        <button type="button" class="btn btn-light">Log In</button>
+        <button type="button" class="btn btn-light">
+          <i class="fa-solid fa-user"></i>Sign Up
+        </button>
+      </div>
+      <div class="myburger">
+        <div class="offcanvas offcanvas-start" id="demo">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Menu</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <button type="button" class="btn btn-light burbut1">
+              Catalog
+            </button>
+            <br />
+            <button type="button" class="btn btn-light burbut2">
+              <i class="fa-solid fa-magnifying-glass"></i>Search
+            </button>
+            <br />
+            <button type="button" class="btn btn-light burbut1">
+              Log In
+            </button>
+            <br />
+            <button type="button" class="btn btn-light burbut2">
+              <i class="fa-solid fa-user"></i>Sign Up
+            </button>
+          </div>
+        </div>
+
+        <button
+          class="btn btn-light burder_btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#demo"
+        >
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<div class="container pt-5 pb-3">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card">
+                <img style="height: 100%;" class="img-fluid" src="img/114987808.jpg" alt="">
+              </div>
+              
+              <a href="https://mythrillfiction.com/" target="_blank"></a>
+        </div>
+        <div class="col-lg-6 info pt-5 pb-5">
+          <div class="typo-box about-me align-items-center height top">
+            <h3>Rafael Rahimli</h3>
+            <h5>
+              Junior
+              <span class="color-theme">Front-end Developer</span>
+              based in
+              <span class="color-theme">Azerbaijan</span>
+            </h5>
+            <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern
+              websites, web services and online stores. My passion is to design digital user experiences through the
+              bold interface and meaningful interactions. Check out my Portfolio</p>
+            <div class="row about-list">
+              <div class="col-md-6">
+                <div class="media">
+                  <label>Birthday</label>
+                  <p>28th October 2002</p>
+                </div>
+                <div class="media">
+                  <label>Age</label>
+                  <p>20 Yr</p>
+                </div>
+                <div class="media">
+                  <label>Residence</label>
+                  <p>Azerbaijan</p>
+                </div>
+                <div class="media">
+                  <label>Adress</label>
+                  <p>Baku, Azerbaijan</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="media">
+                  <label>E-mail</label>
+                  <p>pitann3@gmail.com</p>
+                </div>
+                <div class="media">
+                  <label>phone</label>
+                  <p>994-50-388-80-86</p>
+                </div>
+                <div class="media">
+                  <label>Discrodd</label>
+                  <p>all0$#9885</p>
+                </div>
+                <div class="media">
+                  <label>Freelance</label>
+                  <p>Available</p>
+                </div>
+              </div>
+            </div>
+            <a target="_blank" href="img/SweetCV-CV (1).pdf"><button class="button-85 mt-5" role="button">Dowload CV</button></a>
+            <a target="_blank" href="https://github.com/ka1jo?tab=repositories"><button class="button-85 button-86 mt-5 ms-3" role="button"><i style="font-size: 19px;" class="fa-brands fa-github me-2"></i>GitHub
+            </button></a>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<footer class="container pt-5 mt-5">
+    <div class="row">
+      <div class="col-lg-4 logo">
+        <img src="img/logo.png" alt="" class="img-fluid" />
+        <br />
+        <br />
+        <span
+          >Bookoe is a Book Store Website lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+          nostrud</span
+        >
+        <h6>Follow Us</h6>
+        <div class="social d-flex">
+          <div
+            class="box_style1 d-flex align-items-center justify-content-center"
+          >
+            <i class="fa-brands fa-facebook fa-2x"></i>
+          </div>
+          <div
+            class="box_style2 d-flex align-items-center justify-content-center"
+          >
+            <i class="fa-brands fa-youtube fa-2x"></i>
+          </div>
+          <div
+            class="box_style3 d-flex align-items-center justify-content-center"
+          >
+            <i class="fa-brands fa-twitter fa-2x"></i>
+          </div>
+          <div
+            class="box_style4 d-flex align-items-center justify-content-center"
+          >
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+          </div>
+          <div
+            class="box_style5 d-flex align-items-center justify-content-center"
+          >
+            <i class="fa-brands fa-instagram fa-2x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 foot_tab">
+        <h6 class="zaqolovok">Books Categories</h6>
+        <ul class="first1">
+          <li>Action</li>
+          <li>Adventure</li>
+          <li>Comedy</li>
+          <li>Crime</li>
+          <li>Drama</li>
+          <li>Fantasy</li>
+          <li>Horror</li>
+        </ul>
+        <ul class="second2">
+          <li>Law</li>
+          <li>Mystery</li>
+          <li>Professional</li>
+          <li>Romance</li>
+          <li>TV series</li>
+          <li>View more</li>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <h6 class="zaqolovok">Quick Links</h6>
+        <ul class="third3">
+          <li>About us</li>
+          <li>Contact us</li>
+          <li>Products</li>
+          <li>Login</li>
+          <li>Sign Up</li>
+          <li>FAQ</li>
+          <li>Shipment</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 foot_tab">
+        <h6 class="zaqolovok">Our store</h6>
+        <div>
+          <iframe
+            style="width: 100%; border-radius: 15px"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=+(IATC)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
+        </div>
+
+        <i
+          style="color: #6c5dd3"
+          class="fa-sharp fa-solid fa-location-dot pe-2 mg1 pt-3"
+        ></i>
+        <span>
+          832 Thompson Drive, San Fransisco
+          <br />
+          <span class="mg2">CA 94107, United States</span></span
+        >
+        <br />
+        <br />
+        <span>
+          <i style="color: #6c5dd3" class="fa-solid fa-phone pe-2"></i
+          >+994-50-388-80-86</span
+        >
+        <br />
+        <br />
+        <span>
+          <i style="color: #6c5dd3" class="fa-solid fa-envelope pe-2"></i
+          >pitann3@gmail.com</span
+        >
+      </div>
+    </div>
+  </footer>
+  <hr style="color: #6c5dd3" />
+  <div class="container d-flex justify-content-between foot2">
+    <span> Book Store Website © 2023 All Rights Reserved</span>
+    <span> Made with <span style="color: red">♥</span> by 630.20</span>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
