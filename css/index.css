@@ -1334,6 +1334,20 @@ ul {
     height: 323.25px;
   } */
 }
+@media only screen and (max-width: 436px) {
+  .my_btn_promo {
+    margin: 0px !important;
+    margin-top: 5px !important;
+    padding: 4px;
+    width: 170px;
+  }
+  .my_btn_deal {
+    margin: 0px !important;
+    margin-top: -10px !important;
+    padding: 5px;
+    width: 170px;
+  }
+}
 @media only screen and (max-width: 400px) {
   .flash_sale_timer p {
     margin: 0px;
