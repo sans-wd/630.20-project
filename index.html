@@ -48,6 +48,11 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ========= WoWjs ========= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- ========= Main Css ========= -->
     <link rel="stylesheet" href="./css/index.css" />
@@ -59,7 +64,7 @@
         $("#loading").replaceWith(data);
       });
       $(window).on("load", function () {
-        setTimeout(removeLoader, 3000); //wait for page load PLUS two seconds.
+        setTimeout(removeLoader, 1500); //wait for page load PLUS two seconds.
       });
       function removeLoader() {
         $(".page-loader").fadeOut(400, function () {
@@ -194,7 +199,7 @@
           </div>
         </div>
       </div>
-      <div class="quality pt-3 pb-5">
+      <div class="quality pt-4 pb-5">
         <div class="row">
           <div class="col-xl-3 col-lg-6 col-md-6">
             <div
@@ -356,7 +361,7 @@
       </div>
       <!-- FLASH_SAALES_PART -->
       <div class="flash_sale">
-        <div class="flash_sale_info">
+        <div class="flash_sale_info wow animate__backInUp">
           <h1>
             <i class="fa-solid fa-bolt"></i>Flash Sale<i
               class="fa-solid fa-bolt"
@@ -449,12 +454,12 @@
       <!-- FLASH_SAALES_PART -->
 
       <!-- SAALES PART START -->
-      <div class="swipe_sales pt-5">
+      <div class="swipe_sales pt-5 wow animate__bounceInUp">
         <h6 class="pt-2">
           <i class="fa-solid fa-hand-point-right fa-lg"></i>Second Hand Books on
           Sale<i class="fa-solid fa-hand-point-left fa-lg"></i>
         </h6>
-        <p class="pb-5">
+        <p class="">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam totam
           neque officia quas facere! Accusamus, eius tenetur animi quod laborum
           reiciendis perferendis, tempora quos totam maxime minus perspiciatis
@@ -652,8 +657,10 @@
       <!-- SAALES PART end-->
     </div>
     <!-- FEATURED BOOKS START -->
-    <div class="container-fluid featured_back position-relative">
-      <img
+    <div
+      class="container-fluid featured_back position-relative overflow-hidden"
+    >
+      <!-- <img
         src="./img/backround_best_sell.jpg"
         alt=""
         style="
@@ -669,10 +676,12 @@
           filter: blur(70px) contrast(3.75);
           opacity: 0.5;
         "
-      />
-      <div class="container pt-5 mt-5">
+      /> -->
+      <div class="container pt-5">
         <div class="row">
-          <div class="col-xl-6 col-lg-12 featur_boock_first_side">
+          <div
+            class="col-xl-6 col-lg-12 featur_boock_first_side wow animate__backInLeft"
+          >
             <h1>Featured Books</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -727,7 +736,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-6 col-lg-12">
+          <div class="col-xl-6 col-lg-12 wow animate__backInRight">
             <div class="row feture_books_items">
               <div
                 class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4 mb-2"
@@ -796,7 +805,7 @@
     </div>
     <!-- FEATURED BOOKS START -->
     <!-- TESTIMONIALS START -->
-    <div class="testimonials pt-3 mt-5 pb-0 mb-0">
+    <div class="testimonials pt-0 pb-0 mb-0 wow animate__fadeInUpBig">
       <div class="gtco-testimonials">
         <h2>Testimonials</h2>
         <div class="owl-carousel owl-carousel1 owl-theme">
@@ -882,9 +891,9 @@
     <!-- TESTIMONIALS END -->
     <div class="container-fluid">
       <!-- LetestNews_start -->
-      <section class="LetestNews">
+      <section class="LetestNews pt-5">
         <div class="container">
-          <div class="a_letestnews">
+          <div class="a_letestnews wow animate__fadeInUpBig">
             <h3 class="a_title">Latest News</h3>
             <div
               class="a_title_content d-flex justify-content-between align-items-center"
@@ -908,13 +917,13 @@
           </div>
 
           <div class="benefit_cards row">
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="col-sm-6 col-md-4 col-lg-3 wow animate__fadeInUp">
               <div class="a_card my-3">
                 <div class="a_card_img overflow-hidden">
                   <img
                     src="https://pbs.twimg.com/media/FVTf8B-UEAAH3Bt?format=jpg&name=900x900"
                     alt=""
-                    style="width: 100%; height: auto"
+                    style="width: 100%; height: auto; object-fit: cover"
                   />
                 </div>
                 <div class="a_card_text mb-3">
@@ -931,7 +940,7 @@
                     <img
                       src="https://media.tenor.com/Vlr5ep-dRXMAAAAM/ryan-gosling-blade-runner2049.gif"
                       alt=""
-                      style="width: 100%; height: auto"
+                      style="width: 100%; height: auto; object-fit: cover"
                     />
                   </div>
                   <div class="person_text">
@@ -941,13 +950,16 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              data-wow-delay="0.3s"
+              class="col-sm-6 col-md-4 col-lg-3 wow animate__fadeInUp"
+            >
               <div class="a_card my-3">
                 <div class="a_card_img overflow-hidden">
                   <img
                     src="https://media.gq-magazine.co.uk/photos/5e9ee080be258400088d6fc3/1:1/w_1080,h_1080,c_limit/20200421-psycho-04.jpg"
                     alt=""
-                    style="width: 100%; height: auto"
+                    style="width: 100%; height: 100%; object-fit: cover"
                   />
                 </div>
                 <div class="a_card_text mb-3">
@@ -964,7 +976,7 @@
                     <img
                       src="https://lastfm.freetls.fastly.net/i/u/300x300/6d8a8ff92b706d445650a5efa88a3dfa.jpg"
                       alt=""
-                      style="width: 100%; height: auto"
+                      style="width: 100%; height: 100%; object-fit: cover"
                     />
                   </div>
                   <div class="person_text">
@@ -974,13 +986,16 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              data-wow-delay="0.4s"
+              class="col-sm-6 col-md-4 col-lg-3 wow animate__fadeInUp"
+            >
               <div class="a_card my-3">
                 <div class="a_card_img overflow-hidden">
                   <img
                     src="https://i.guim.co.uk/img/media/44eddd0655bf11d1a7b029f15439f9f7b9efb201/181_28_2208_1324/master/2208.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=da9c2c9b2fe603689a6116aa0fc9b948"
                     alt=""
-                    style="width: 100%; height: auto"
+                    style="width: 100%; height: 100%; object-fit: cover"
                   />
                 </div>
                 <div class="a_card_text mb-3">
@@ -997,7 +1012,12 @@
                     <img
                       src="https://media.tenor.com/7EVV_etkVscAAAAC/fight-club-triggered.gif"
                       alt=""
-                      style="width: 100%; height: auto; scale: 1.1"
+                      style="
+                        width: 100%;
+                        height: 100%;
+                        scale: 1.1;
+                        object-fit: cover;
+                      "
                     />
                   </div>
                   <div class="person_text">
@@ -1007,13 +1027,21 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div
+              data-wow-delay="0.5s"
+              class="col-sm-6 col-md-4 col-lg-3 wow animate__fadeInUp"
+            >
               <div class="a_card my-3">
                 <div class="a_card_img overflow-hidden">
                   <img
                     src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F11%2Fjohn-wick-chapter-4-trailer-keanu-reeves-bill-skarsgard-0.jpg?fit=max&cbr=1&q=90&w=750&h=500"
                     alt=""
-                    style="width: 100%; height: auto; scale: 1.1"
+                    style="
+                      width: 100%;
+                      height: 100%;
+                      scale: 1.1;
+                      object-fit: cover;
+                    "
                   />
                 </div>
                 <div class="a_card_text mb-3">
@@ -1030,7 +1058,12 @@
                     <img
                       src="https://media.tenor.com/ZEO_IbZ5n3QAAAAd/john-wick.gif"
                       alt=""
-                      style="width: 100%; height: auto; scale: 1.3"
+                      style="
+                        width: 100%;
+                        height: 100%;
+                        scale: 1.3;
+                        object-fit: cover;
+                      "
                     />
                   </div>
                   <div class="person_text">
@@ -1046,7 +1079,7 @@
       <!-- LetestNews_end -->
 
       <!-- totalNumber_start -->
-      <section class="totalNumber">
+      <section class="totalNumber wow animate__fadeInUpBig">
         <div class="container">
           <div id="a_counter" class="row">
             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
@@ -1111,7 +1144,7 @@
       <!-- totalNumber_end -->
 
       <!-- subscribe_start -->
-      <section class="subscribe">
+      <section class="subscribe wow animate__fadeInUpBig">
         <div class="container">
           <div
             class="a_subscribe_inner d-flex flex-column align-items-center text-center"
@@ -1144,7 +1177,7 @@
       <!-- subscribe_end-->
 
       <!-- FOTTER START -->
-      <footer class="container pt-5 mt-5">
+      <footer class="container pt-5 mt-5 wow animate__fadeInUpBig">
         <div class="row">
           <div class="col-lg-4 logo">
             <img src="img/logo.png" alt="" class="img-fluid" />
@@ -1252,7 +1285,7 @@
           </div>
         </div>
       </footer>
-      <hr style="color: #6c5dd3" />
+      <hr style="color: #5d3fd3" />
       <div class="container d-flex justify-content-between foot2">
         <span> Book Store Website © 2023 All Rights Reserved</span>
         <span> Made with <span style="color: red">♥</span> by 630.20</span>
@@ -1454,4 +1487,20 @@
       }
     });
   });
+</script>
+<script src="./WOW-master/dist/wow.min.js"></script>
+<script>
+  new WOW({
+    boxClass: "wow", // animated element css class (default is wow)
+    animateClass: "animate__animated", // animation css class (default is animated)
+    offset: 0, // distance to the element when triggering the animation (default is 0)
+    mobile: true, // trigger animations on mobile devices (default is true)
+    live: true, // act on asynchronously loaded content (default is true)
+    callback: function (box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null, // optional scroll container selector, otherwise use window,
+    resetAnimation: true, // reset animation on end (default is true)
+  }).init();
 </script>
