@@ -610,7 +610,7 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
 
   /* DarkPurple */
 
@@ -1111,6 +1111,13 @@ body {
 .box_style3:hover {
   background: #c2dbe2;
 }
+.box_style4:hover {
+  background: #759ab4;
+}
+.box_style5:hover {
+  background: #ff8eb0;
+}
+
 .first1 {
   float: left;
 }
@@ -1215,6 +1222,9 @@ ul {
   .feture_books_items {
     padding-top: 10px;
   }
+  .featur_boock_first_side p {
+    margin-bottom: -2px;
+  }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -1235,6 +1245,9 @@ ul {
     width: 456px;
     height: 684px;
   } */
+  .featur_boock_first_side p {
+    margin-bottom: 10px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .input_part {
